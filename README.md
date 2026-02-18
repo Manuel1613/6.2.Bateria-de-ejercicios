@@ -19,3 +19,14 @@ classDiagram
 	Estudiante :-double notaMedia
 	Estudiante --|> Persona
 ```
+
+## Ejercicio 3
+```mermaid
+classDiagram
+	Computadora 
+	PlacaBase
+	Raton
+
+	Computadora *-- PlacaBase
+	Computadora o-- Raton
+```
