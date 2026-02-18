@@ -9,3 +9,13 @@ classDiagram
     Usuario : +cambiarPassword()
     Usuario : -validarEmail()
 ```
+
+## Ejercicio 2
+```mermaid
+classDiagram
+	Persona : -String nombre
+	Persona : -String dni
+	Estudiante : -String numeroExpediente
+	Estudiante :-double notaMedia
+	Estudiante --|> Persona
+```
