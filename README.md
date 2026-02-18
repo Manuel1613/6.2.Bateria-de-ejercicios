@@ -64,3 +64,23 @@ classDiagram
 	Paypal ..|> MetodoPago
 	Carrito ..|> MetodoPago
 ```
+
+## Ejercicio 6
+```mermaid
+classDiagram
+	Recurso : -int id
+	Recurso : -String titulo
+	Recurso : +prestar()
+	Recurso : +devolver()
+
+	Libro : -String isbn
+	Revista : numeroEdicion
+
+	Usuario : -String nombre
+	Usuario : -int numCarnet
+
+	Libro ..|> Recurso
+	Revista ..|> Recurso
+
+	Usuario "1" -- "0.." Recurso
+```
