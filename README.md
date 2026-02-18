@@ -39,3 +39,28 @@ classDiagram
 
 	CentroComercial "1" -- "1.." Tienda
 ```
+
+## Ejercicio 5
+```mermaid
+classDiagram
+	class MetodoPago {
+		<<interface>>
+		+procesar(double importe)
+	}
+
+	class Tarjeta {
+		+procesar(double importe)
+	}
+
+	class Paypal {
+		+procesar(double importe)
+	}
+
+	class Carrito{
+		+pagar(MetodoPago miMetodo)
+	}
+
+	Tarjeta ..|> MetodoPago
+	Paypal ..|> MetodoPago
+	Carrito ..|> MetodoPago
+```
